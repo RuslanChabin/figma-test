@@ -1,0 +1,38 @@
+/* Gilroy-Extrabold */
+@font-face {
+	font-family: "Conv_GilroyExtraBold";
+	src: url("../fonts/GilroyExtraBold.eot");
+	src: local("Gilroy"), 
+		url("../fonts/GilroyExtraBold.woff") format("woff"), 
+		url("../fonts/GilroyExtraBold.ttf") format("truetype"), 
+		url("../fonts/GilroyExtraBold.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* DIN Pro Regular */
+@font-face {
+    font-family: "DIN Pro";
+    src: url("../fonts/DINPro.eot");
+    src: local("DIN Pro"), local("DINPro"),
+        url("../fonts/DINPro.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DINPro.woff2") format("woff2"),
+        url("../fonts/DINPro.woff") format("woff"),
+        url("../fonts/DINPro.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DIN Pro Bold */
+@font-face {
+    font-family: "DIN Pro";
+    src: url("../fonts/DINPro-Bold.eot");
+    src: local("DIN Pro Bold"), local("DINPro-Bold"),
+        url("../fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DINPro-Bold.woff2") format("woff2"),
+        url("../fonts/DINPro-Bold.woff") format("woff"),
+        url("../fonts/DINPro-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}

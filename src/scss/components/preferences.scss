@@ -1,0 +1,63 @@
+.preferences {
+	background-color: #F7F5FA;
+	width: 100%;
+	padding-top: 120px;
+	padding-bottom: 163px;
+}
+
+.preferences__title {
+	font-family: "DIN Pro";
+	font-size: 38px;
+	font-weight: 300;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: -2%;
+	margin-bottom: 60px;
+}
+
+.preferences-list {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	list-style: none;
+}
+
+.preferences-list__item {
+	width: 380px;
+}
+
+.preferences-list__item:not(:last-child) {
+	margin-right: 18px;
+}
+
+.preferences-list__icon {
+	margin-bottom: 21px;
+}
+
+.preferences-list_title {
+	position: relative;
+	font-family: "DIN Pro";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 25px;
+	margin-bottom: 50px;
+	
+	&::after {
+		position: absolute;
+		top: 48px;
+		left: 0;
+		content: "";
+		width: 24px;
+		height: 2px;
+		background-color: #F47821;
+	}
+}
+
+.preferences__text {
+	display: block;
+	width: 337px;
+	
+	&--short {
+		width: 320px;
+	}
+}
