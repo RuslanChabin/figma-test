@@ -2,7 +2,7 @@
 	background-color: #F7F5FA;
 	width: 100%;
 	padding-top: 120px;
-	padding-bottom: 163px;
+	padding-bottom: 143px;
 }
 
 .preferences__title {
@@ -17,6 +17,7 @@
 
 .preferences-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
 	list-style: none;
@@ -24,6 +25,10 @@
 
 .preferences-list__item {
 	width: 380px;
+	margin-bottom: 20px;
+	@media screen and (max-width: 1230px){
+		margin-left: 50px;
+	}
 }
 
 .preferences-list__item:not(:last-child) {
@@ -59,5 +64,8 @@
 	
 	&--short {
 		width: 320px;
+	}
+	@media screen and (max-width: 530px){
+		width: auto;
 	}
 }

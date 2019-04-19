@@ -12,9 +12,7 @@
     <header class="header container">
       <h1 class="header__title">Ты готов стать профессионалом?</h1>
       <p class="header__text">Мы ищем <span class="header__text--orange">талантов</span> и <span class="header__text--orange">саппортов</span> в команду Решите на какую категорию вы претендуете.</p>
-      <div class="header__btn-wrapper">
-        <button class="btn header__btn"></button>
-      </div>
+      <div class="header__btn-wrapper"><a class="btn header__btn" href="#titleLink"></a></div>
     </header>
     <main>
       <section class="options">
@@ -73,24 +71,24 @@
       </section>
     </main>
     <footer class="footer">
-      <h1 class="footer__title">Теперь расскажите о себе</h1>
+      <h1 class="footer__title" id="titleLink">Теперь расскажите о себе</h1>
       <form class="form">
         <ul class="form-list">
-          <li class="form-list__item"><span class="form__input-number">1</span>
+          <li class="form-list__item"><span class="form_error-note">Empty field</span><span class="form__input-number">1</span>
             <label class="form-label" for="nameField">Фамилия и имя</label>
-            <input class="form__input" type="text" name="name" id="nameField" value="" placeholder="Сидоров Александр" required>
+            <input class="form__input" type="text" name="name" id="nameField" value="" placeholder="Сидоров Александр">
           </li>
-          <li class="form-list__item"><span class="form__input-number">2</span>
+          <li class="form-list__item"><span class="form_error-note">Empty field</span><span class="form__input-number">2</span>
             <label class="form-label" for="mailField">Электронная почта</label>
-            <input class="form__input" type="text" name="mail" id="mailField" value="" placeholder="Sidorov@yandex.ru" required>
+            <input class="form__input" type="email" name="mail" id="mailField" value="" placeholder="Sidorov@yandex.ru">
           </li>
-          <li class="form-list__item"><span class="form__input-number">3</span>
+          <li class="form-list__item"><span class="form_error-note">Empty field</span><span class="form__input-number">3</span>
             <label class="form-label" for="phoneField">Телефон</label>
-            <input class="form__input" type="text" name="phone" id="phoneField" value="" placeholder="+7(999)-328-14-20" required>
+            <input class="form__input" type="text" name="phone" id="phoneField" value="" placeholder="+7(999)-328-14-20">
           </li>
-          <li class="form-list__item"><span class="form__input-number">4</span>
+          <li class="form-list__item"><span class="form_error-note">Empty field</span><span class="form__input-number">4</span>
             <label class="form-label form-label--low-bottom" for="discriptionField">Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</label>
-            <textarea class="form__input form__input--low-bottom" rows="2" name="discription" id="discriptionField" placeholder="Свой проект по созданию универсальной инфраструктуры строительства" required></textarea>
+            <textarea class="form__input form__input--low-bottom" rows="2" name="discription" id="discriptionField" placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></textarea>
           </li>
         </ul>
         <button class="form__btn" type="submit">Отправить</button>

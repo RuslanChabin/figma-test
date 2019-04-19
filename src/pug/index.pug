@@ -12,7 +12,7 @@ html(lang="ru")
 			h1.header__title Ты готов стать профессионалом?
 			p.header__text Мы ищем <span class="header__text--orange">талантов</span> и <span class="header__text--orange">саппортов</span> в команду Решите на какую категорию вы претендуете.
 			div.header__btn-wrapper
-				button.btn.header__btn
+				a.btn.header__btn(href="#titleLink")
 		main
 			section.options
 				h1.hidden Options
@@ -53,24 +53,28 @@ html(lang="ru")
 						h2.preferences-list_title Гибкий график
 						p.preferences__text Мы умеем работать с теми, кто еще не закончил получать образование. Вы можете работать неполный рабочий день, брать отгулы на время сессии и диплома.
 		footer.footer
-			h1.footer__title Теперь расскажите о себе
+			h1.footer__title#titleLink Теперь расскажите о себе
 			form.form
 				ul.form-list
 					li.form-list__item
+						span.form_error-note Empty field
 						span.form__input-number 1
 						label.form-label(for="nameField") Фамилия и имя
-						input.form__input(type="text" name="name" id="nameField" value="" placeholder="Сидоров Александр" required)
+						input.form__input(type="text" name="name" id="nameField" value="" placeholder="Сидоров Александр")
 					li.form-list__item
+						span.form_error-note Empty field
 						span.form__input-number 2
 						label.form-label(for="mailField") Электронная почта
-						input.form__input(type="text" name="mail" id="mailField" value="" placeholder="Sidorov@yandex.ru" required)
+						input.form__input(type="email" name="mail" id="mailField" value="" placeholder="Sidorov@yandex.ru")
 					li.form-list__item
+						span.form_error-note Empty field
 						span.form__input-number 3
 						label.form-label(for="phoneField") Телефон
-						input.form__input(type="text" name="phone" id="phoneField" value="" placeholder="+7(999)-328-14-20" required)
+						input.form__input(type="text" name="phone" id="phoneField" value="" placeholder="+7(999)-328-14-20")
 					li.form-list__item
+						span.form_error-note Empty field
 						span.form__input-number 4
 						label.form-label.form-label--low-bottom(for="discriptionField") Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?
-						textarea.form__input.form__input--low-bottom(rows="2" name="discription" id="discriptionField" placeholder="Свой проект по созданию универсальной инфраструктуры строительства" required)
+						textarea.form__input.form__input--low-bottom(rows="2" name="discription" id="discriptionField" placeholder="Свой проект по созданию универсальной инфраструктуры строительства")
 				button.form__btn(type="submit") Отправить
 		

@@ -4,7 +4,7 @@
 	background-color: #F7F5FA;
 	background-image: url(../images/background.png);
 	background-size: contain;
-	background-position: 0% -180px;
+	background-position: 0% -12.5vw;
 	background-repeat: no-repeat;
 }
 
@@ -14,18 +14,32 @@
 	justify-content: center;
 	width: 100%;
 	min-height: 445px;
-	margin-top: -98px;
+	margin-top: -6.8vw;
 	padding-bottom: 80px;
 	list-style: none;
 	background-image: linear-gradient(to bottom, transparent 0, transparent 98px, #F7F5FA 98px, #F7F5FA 100%);
+	
+	@media screen and (max-width: 974px){
+		margin-top: -20vw;
+	}
+	@media screen and (max-width: 809px){
+		margin-top: -30vw;
+	}
+	@media screen and (max-width: 712px){
+		margin-top: -50vw;
+	}
+	@media screen and (max-width: 576px){
+		margin-top: -70vw;
+	}
 }
 
 .options-list__item {
 	width: 370px;
-	height: 184px;
+	min-height: 164px;
 	padding-top: 46px;
 	padding-left: 60px;
 	padding-right: 55px;
+	padding-bottom: 20px;
 	background-color: #ffffff;
 	border: 1px solid #EDEDED;
 }
